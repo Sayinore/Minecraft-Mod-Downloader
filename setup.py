@@ -1,7 +1,8 @@
-import platform
-import module.log as log
-import os
 import json
+import os
+import platform
+
+import module.log as log
 
 u_cfg = open("config.json", "w")
 game_p = "Cannot auto scan"
@@ -34,7 +35,7 @@ else:
     print()
 
 cfg = {
-    "game_p" : game_p,
+    "game_p": game_p,
     "download_p": download_p
 }
 u_cfg.write(json.dumps(cfg, indent=4))

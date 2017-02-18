@@ -1,7 +1,9 @@
-from colorama import init, Fore, Back, Style
-import platform
 import os
+import platform
 import time
+
+from colorama import init, Fore, Style
+
 import module.log as log
 
 init(autoreset=True)

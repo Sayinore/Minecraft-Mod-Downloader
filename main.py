@@ -1,14 +1,14 @@
-import module.search as search
+import webbrowser
+
 import module.get_link as get
-import module.screen as screen
 import module.install as inst
 import module.log as log
-import webbrowser
+import module.screen as screen
+import module.search as search
 
 # Array
 cmd = ["get"]
 cmd_h = ["try to get download link of the mod from this link"]
-
 
 # user guide
 screen.cls()
@@ -37,7 +37,6 @@ screen.cls()
 log.user("Mod name: " + m_name)
 log.user("Game version: " + g_version)
 log.user("Max page number: " + m_page)
-
 
 # search
 print()

@@ -1,9 +1,10 @@
-import os
 import json
+import os
 import shutil
 import time
-import module.screen as screen
+
 import module.log as log
+import module.screen as screen
 
 log.info("Loading configs")
 with open("config.json") as cfg_f:

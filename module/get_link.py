@@ -1,8 +1,9 @@
-import urllib.request
-import urllib
 import random
-import module.log as log
+import urllib.request
+
 from bs4 import BeautifulSoup as bs
+
+import module.log as log
 
 ua = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
