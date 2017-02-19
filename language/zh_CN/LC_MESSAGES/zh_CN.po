@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-02-19 13:48+0800\n"
+"PO-Revision-Date: 2017-02-19 14:33+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: main.py:13
+msgid "try getting download link of the mod from this link"
+msgstr "尝试从该链接获取模组的下载链接"
+
+#: main.py:17
+msgid "Welcome Use Minecraft Mod Downloader by Sayinore!"
+msgstr "欢迎使用Sayinore编写的Minecraft模组下载器！"
+
+#: main.py:22
+msgid "Mod name"
+msgstr "模组名称"
+
+#: main.py:25
+msgid "Invalid mod name"
+msgstr "无效模组名称"
+
+#: main.py:28
+msgid "Game version"
+msgstr "游戏版本"
+
+#: main.py:32
+msgid "Max page number"
+msgstr "最大页码"
+
+#: main.py:33
+msgid "The program will get that page(s) of search result."
+msgstr "程序将获取总页数为你所输入的数字的搜索结果。"
+
+#: main.py:39
+#, python-format
+msgid "Mod name: %s"
+msgstr "模组名称：%s"
+
+#: main.py:40
+#, python-format
+msgid "Game version: %s"
+msgstr "游戏版本：%s"
+
+#: main.py:41
+#, python-format
+msgid "Max page number: %s"
+msgstr "最大页码：%s"
+
+#: main.py:50
+#, python-format
+msgid "Processing page %s of the search result"
+msgstr "正在处理第%s页搜索结果"
+
+#: main.py:60
+msgid "Finished searching"
+msgstr "完成搜索"
+
+#: main.py:62
+msgid "Thread to download the mod from"
+msgstr "作为模组下载源的帖子"
+
+#: main.py:68
+msgid "Getting download link succeeded"
+msgstr "成功获取下载链接"
+
+#: main.py:69
+msgid "Going downloading"
+msgstr "去下载"
+
+#: main.py:73
+msgid "Getting download link failed"
+msgstr "无法获取下载链接"
+
+#: main.py:74
+msgid "Going reading the thread"
+msgstr "去看帖"
+
+#: main.py:77
+msgid "If you have finished downloading, please press Enter to continue."
+msgstr "如果你下载完了，请按 Enter 键以继续。"
+
+#: module/get_link.py:20
+msgid "Loading the MCBBS thread"
+msgstr "正在加载该MCBBS帖子"
+
+#: module/get_link.py:23
+msgid "Checking the MCBBS thread"
+msgstr "正在检查该MCBBS帖子"
+
+#: module/get_link.py:25
+msgid "Testing if it is a mod-posting thread"
+msgstr "正在测试它是不是模组发布帖"
+
+#: module/install.py:11
+msgid "Loading configs"
+msgstr "正在加载配置"
+
+#: module/install.py:21
+msgid "select the file as the mod"
+msgstr "选择它为模组文件"
+
+#: module/install.py:23
+msgid "Scanning files"
+msgstr "正在扫描文件"
+
+#: module/install.py:40
+msgid "Scanned 0 file"
+msgstr "扫描到0个文件"
+
+#: module/install.py:41
+msgid "Drag the mod file here, or input the path of it."
+msgstr "将模组文件拖到这里，或者输入它的路径。"
+
+#: module/install.py:48
+msgid "Mod file"
+msgstr "模组文件"
+
+#: module/install.py:56
+msgid "Installation succeeded"
+msgstr "安装成功"
+
+#: module/install.py:58
+msgid "Thanks for using!"
+msgstr "谢谢使用！"
+
+#: module/log.py:16
+#, python-brace-format
+msgid "{g}[INFO]{w}"
+msgstr "{g}[信息]{w}"
+
+#: module/log.py:21
+#, python-brace-format
+msgid "{c}[PROGRESS]{b}"
+msgstr "{c}[进度]{b}"
+
+#: module/log.py:26
+#, python-brace-format
+msgid "{m}[INPUT]{w}{b}"
+msgstr "{m}[输入]{w}{b}"
+
+#: module/log.py:31
+#, python-brace-format
+msgid "{r}[ERROR]{w}{b}"
+msgstr "{r}[错误]{w}{b}"
+
+#: module/log.py:36
+#, python-brace-format
+msgid "{m}[MENU]{w}{b}"
+msgstr "{m}[菜单]{w}{b}"
+
+#: module/log.py:41
+#, python-brace-format
+msgid "{y}[WARNING]{w}{b}"
+msgstr "{y}[警告]{w}{b}"
+
+#: module/log.py:46
+#, python-brace-format
+msgid "{m}[USER]{w}{b}"
+msgstr "{m}[用户]{w}{b}"
+
+#: module/screen.py:24
+msgid "Order"
+msgstr "编号"
+
+#: module/screen.py:24
+msgid "Item"
+msgstr "项目"
+
+#: module/screen.py:33
+#, python-format
+msgid "Usage: %s(command) (number)"
+msgstr "用法：%s（命令）（编号）"
+
+#: module/screen.py:34
+msgid "Command list:"
+msgstr "命令列表："
+
+#: module/screen.py:44
+msgid "Command"
+msgstr "命令"
+
+#: module/screen.py:55
+msgid "Invalid command"
+msgstr "无效命令"
+
+#: module/search.py:25
+msgid "Searching with bing"
+msgstr "正在用Bing搜索"
+
+#: module/search.py:47
+msgid "Searching in mcbbs"
+msgstr "正在MCBBS中搜索"
+
+#: module/search.py:52
+#, python-brace-format
+msgid "Checking the search results of bing, {c}/{t}"
+msgstr "检查Bing的搜索结果， {c}/{t}"
+
+#: module/search.py:53
+msgid "Testing if they are from MCBBS"
+msgstr "正在测试它们是否来自MCBBS"
+
+#: module/search.py:61
+msgid "Testing if the MCBBS thread for the needed game version"
+msgstr "正在测试这个MCBBS帖子是否适用于需要的游戏版本"
+
+#: module/search.py:65
+#, python-format
+msgid "Found %d result(s)"
+msgstr "找到%d条搜索结果"
+
+#: setup.py:20
+#, python-format
+msgid "Is your game path this? \"%s\" If so, please press Enter; or input it."
+msgstr "你的游戏路径是 “%s” 吗？如果是，请按下Enter键；否则就输入它。"
+
+#: setup.py:21
+msgid "Game path"
+msgstr "游戏路径"
+
+#: setup.py:29
+#, python-format
+msgid "Is your download path this? \"%s\" If so, please press Enter; or input it."
+msgstr "你的下载路径是 “%s” 吗？如果是，请按下Enter键；否则就输入它。"
+
+#: setup.py:30
+msgid "Download path"
+msgstr "下载路径"
+
+#: setup.py:44
+msgid "Finished!"
+msgstr "完成！"
+
+#~ msgid "Is your game path this? \"%s\" If so, please press Enter, or input it."
+#~ msgstr "你的游戏路径是“%s”吗？如果是，请按下Enter键；否则就输入它。"
+
+#~ msgid "Searching with mcbbs"
+#~ msgstr "正在用MCBBS搜索"
+
+#~ msgid "Thread to download from"
+#~ msgstr "准备从它下载模组的帖子"
+
+#~ msgid "Thread to download"
+#~ msgstr "欲下载的帖子"
+
+#~ msgid "get"
+#~ msgstr "get"

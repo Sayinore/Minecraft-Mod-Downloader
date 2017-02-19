@@ -5,6 +5,7 @@ import time
 from colorama import init, Fore, Style
 
 import module.log as log
+import module.lang
 
 init(autoreset=True)
 
@@ -20,7 +21,7 @@ def cls():
 def menu(lst, cmd, cmd_h):
     lest = str(len(lst)) + "        "
     space = len(lest) - 4
-    print(Fore.LIGHTWHITE_EX + Style.BRIGHT + "Order" + " " * space + "Item")
+    print(Fore.LIGHTWHITE_EX + Style.BRIGHT + _("Order") + " " * space + _("Item"))
     for i in lst:
         num = lst.index(i) + 1
         txt = Style.BRIGHT + str(num) + "        " + Style.NORMAL + i
@@ -29,8 +30,8 @@ def menu(lst, cmd, cmd_h):
         print(txt)
 
     print()
-    log.user("Usage: " + Style.BRIGHT + "(command) (number)")
-    log.user("Command list:")
+    log.user(_("Usage: %s(command) (number)") % Style.BRIGHT)
+    log.user(_("Command list:"))
     lens = list(map(len, cmd))
     lest = cmd[lens.index(max(lens))] + "----"
     for (k, t) in zip(cmd, cmd_h):
@@ -40,7 +41,7 @@ def menu(lst, cmd, cmd_h):
         print(Style.BRIGHT + txt)
 
     print()
-    log.inp("Command")
+    log.inp(_("Command"))
     user_ipt = input()
 
     if user_ipt.find(" "):
@@ -51,7 +52,7 @@ def menu(lst, cmd, cmd_h):
     if user_cmd in cmd:
         return user_cmd, user_ord
 
-    log.error("Invalid command")
+    log.error(_("Invalid command"))
     time.sleep(2)
     cls()
     menu(lst, cmd, cmd_h)

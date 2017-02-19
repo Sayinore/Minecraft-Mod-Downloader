@@ -5,8 +5,9 @@ import time
 
 import module.log as log
 import module.screen as screen
+import module.lang
 
-log.info("Loading configs")
+log.info(_("Loading configs"))
 with open("config.json") as cfg_f:
     cfg = json.load(cfg_f)
     game_p = cfg["game_p"]
@@ -16,9 +17,9 @@ with open("config.json") as cfg_f:
 def inst(g_version, m_name):
     file = []
     cmd = ["slc"]
-    cmd_h = ["select the file as the mod"]
+    cmd_h = [_("select the file as the mod")]
 
-    log.info("Scanning files")
+    log.info(_("Scanning files"))
     for i in os.scandir(download_p):
         name, ext = os.path.splitext(i.name)
 
@@ -35,21 +36,23 @@ def inst(g_version, m_name):
                 file.remove(j)
 
     if len(file) == 0:
-        log.warn("Scanned 0 file")
-        log.user("Drag the mod file here, or input the path of it.")
-        inst_file = os.path.abspath(input())
+        log.warn(_("Scanned 0 file"))
+        log.user(_("Drag the mod file here, or input the path of it."))
+        inst_file = os.path.abspath(input()[1:-1])
 
     if len(file) == 1:
         inst_file = file.pop()
 
     if len(file) >= 1:
-        log.menu("Mod file")
+        log.menu(_("Mod file"))
         user_command, user_number = screen.menu(file, cmd, cmd_h)
         if user_command == "slc":
             inst_file = file[int(user_number) - 1]
 
     m_f_name = "[" + g_version + "]" + m_name + os.path.splitext(inst_file)[1]
+
     shutil.copy(inst_file, os.path.join(game_p, "mods", m_f_name))
-    log.pro("Installation succeeded")
+    log.pro(_("Installation succeeded"))
+    log.user(_("Thanks for using!"))
+
     time.sleep(2)
-    log.user("Thanks for using!")
