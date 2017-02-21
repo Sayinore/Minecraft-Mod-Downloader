@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-02-19 13:48+0800\n"
-"PO-Revision-Date: 2017-02-19 14:33+0800\n"
+"POT-Creation-Date: 2017-02-21 21:00+0800\n"
+"PO-Revision-Date: 2017-02-21 21:01+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -103,35 +103,35 @@ msgstr "正在检查该MCBBS帖子"
 msgid "Testing if it is a mod-posting thread"
 msgstr "正在测试它是不是模组发布帖"
 
-#: module/install.py:11
+#: module/install.py:10
 msgid "Loading configs"
 msgstr "正在加载配置"
 
-#: module/install.py:21
+#: module/install.py:20
 msgid "select the file as the mod"
 msgstr "选择它为模组文件"
 
-#: module/install.py:23
+#: module/install.py:22
 msgid "Scanning files"
 msgstr "正在扫描文件"
 
-#: module/install.py:40
+#: module/install.py:39
 msgid "Scanned 0 file"
 msgstr "扫描到0个文件"
 
-#: module/install.py:41
+#: module/install.py:40
 msgid "Drag the mod file here, or input the path of it."
 msgstr "将模组文件拖到这里，或者输入它的路径。"
 
-#: module/install.py:48
+#: module/install.py:47
 msgid "Mod file"
 msgstr "模组文件"
 
-#: module/install.py:56
+#: module/install.py:55
 msgid "Installation succeeded"
 msgstr "安装成功"
 
-#: module/install.py:58
+#: module/install.py:56
 msgid "Thanks for using!"
 msgstr "谢谢使用！"
 
@@ -221,25 +221,29 @@ msgstr "正在测试这个MCBBS帖子是否适用于需要的游戏版本"
 msgid "Found %d result(s)"
 msgstr "找到%d条搜索结果"
 
-#: setup.py:20
+#: setup.py:10 setup.py:11
+msgid "Cannot auto scan"
+msgstr "无法自动扫描"
+
+#: setup.py:21
 #, python-format
 msgid "Is your game path this? \"%s\" If so, please press Enter; or input it."
 msgstr "你的游戏路径是 “%s” 吗？如果是，请按下Enter键；否则就输入它。"
 
-#: setup.py:21
+#: setup.py:22
 msgid "Game path"
 msgstr "游戏路径"
 
-#: setup.py:29
+#: setup.py:30
 #, python-format
 msgid "Is your download path this? \"%s\" If so, please press Enter; or input it."
 msgstr "你的下载路径是 “%s” 吗？如果是，请按下Enter键；否则就输入它。"
 
-#: setup.py:30
+#: setup.py:31
 msgid "Download path"
 msgstr "下载路径"
 
-#: setup.py:44
+#: setup.py:47
 msgid "Finished!"
 msgstr "完成！"
 

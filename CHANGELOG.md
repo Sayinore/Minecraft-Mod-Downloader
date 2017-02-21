@@ -1,4 +1,9 @@
 #v1.0.5
+2017-2-21
+- Fixed bugs
+    - Sometimes `setup.py` creates a empty config file
+
+
 2017-2-19  
 - Fixed bugs
     - Cannot check if the link in the invalid download links, like `请看楼下.com`

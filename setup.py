@@ -6,9 +6,9 @@ import time
 import module.log as log
 import module.lang
 
-u_cfg = open("config.json", "w")
-game_p = "Cannot auto scan"
-download_p = "Cannot auto scan"
+
+game_p = _("Cannot auto scan")
+download_p = _("Cannot auto scan")
 
 if platform.system() == "Windows":
     game_p = os.path.join(os.environ.get("appdata"), ".minecraft")
@@ -40,7 +40,9 @@ cfg = {
     "game_p": game_p,
     "download_p": download_p
 }
-u_cfg.write(json.dumps(cfg, indent=4))
+
+with open("config.json", "w") as cfg_f:
+    cfg_f.write(json.dumps(cfg, indent=4))
 
 log.user(_("Finished!"))
 time.sleep(2)
